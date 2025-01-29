@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/FtH81vCV)
 # Coffee-Machine
 This project allows you to get a taste of JavaScript. Practice working with functions, challenge yourself with loops and conditions, and get more experience with JS.
 
