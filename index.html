@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>☕ Coffee Machine</h1>
+
+        <h3>Choose Your Coffee</h3>
+        <select id="coffeeType">
+            <option value="1">Espresso</option>
+            <option value="2">Latte</option>
+            <option value="3">Cappuccino</option>
+            <option value="4">Macchiato</option>
+            <option value="5">Mocha</option>
+        </select>
+
+        <h3>Choose Cup Size:</h3>
+        <select id="cupSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <h3>Choose Milk Type:</h3>
+        <select id="milkType">
+            <option value="1">Regular</option>
+            <option value="2">Almond</option>
+            <option value="3">Oat</option>
+        </select>
+
+        <br>
+        <button onclick="buyCoffee()">Buy Coffee</button>
+        <button onclick="fillMachine()">Fill Supplies</button>
+        <button onclick="takeMoney()">Take Money</button>
+        <button onclick="resetSales()">Reset Sales</button>
+
+        <div class="status" id="statusMessage"></div>
+        <h3>📊 Coffee Machine Status:</h3>
+        <div class="status" id="machineStatus"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
