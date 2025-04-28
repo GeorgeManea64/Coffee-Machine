@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f5f5dc;
+    background-image: url(Images/cafe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     width: 50%;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: linear-gradient(white, gray);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }

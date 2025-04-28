@@ -11,7 +11,7 @@
     <div class="container">
         <h1>☕ Coffee Machine</h1>
 
-        <h3>Choose Your Coffee</h3>
+        <h3>Choose Your Coffee:</h3>
         <select id="coffeeType">
             <option value="1">Espresso</option>
             <option value="2">Latte</option>
@@ -19,6 +19,15 @@
             <option value="4">Macchiato</option>
             <option value="5">Mocha</option>
         </select>
+        <div style="font-size: 14px; color: #555;">
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Espresso:</strong> 250ml water, 16g coffee beans – $4</li>
+                <li><strong>Latte:</strong> 350ml water, 75ml milk, 20g coffee beans – $7</li>
+                <li><strong>Cappuccino:</strong> 200ml water, 100ml milk, 12g coffee beans – $6</li>
+                <li><strong>Macchiato:</strong> 100ml water, 50ml milk, 14g coffee beans – $5</li>
+                <li><strong>Mocha:</strong> 250ml water, 150ml milk, 18g coffee beans – $8</li>
+            </ul>
+        </div>
 
         <h3>Choose Cup Size:</h3>
         <select id="cupSize">
@@ -26,6 +35,13 @@
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
+        <div style="font-size: 14px; color: #555;">
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Small:</strong> 75% of normal size</li>
+                <li><strong>Medium:</strong> Regular size</li>
+                <li><strong>Large:</strong> 150% of normal size</li>
+            </ul>
+        </div>
 
         <h3>Choose Milk Type:</h3>
         <select id="milkType">
@@ -33,6 +49,13 @@
             <option value="2">Almond</option>
             <option value="3">Oat</option>
         </select>
+        <div style="font-size: 14px; color: #555;">
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Regular:</strong> Classic dairy milk</li>
+                <li><strong>Almond:</strong> Nutty and slightly sweet</li>
+                <li><strong>Oat:</strong> Creamy and smooth</li>
+            </ul>
+        </div>
 
         <br>
         <button onclick="buyCoffee()">Buy Coffee</button>
