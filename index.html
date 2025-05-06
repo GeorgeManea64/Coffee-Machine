@@ -19,7 +19,7 @@
             <option value="4">Macchiato</option>
             <option value="5">Mocha</option>
         </select>
-        <div style="font-size: 14px; color: #555;">
+        <div style="font-size: 14px; color: #000000;">
             <ul style="list-style: none; padding: 0;">
                 <li><strong>Espresso:</strong> 250ml water, 16g coffee beans – $4</li>
                 <li><strong>Latte:</strong> 350ml water, 75ml milk, 20g coffee beans – $7</li>
@@ -35,7 +35,7 @@
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
-        <div style="font-size: 14px; color: #555;">
+        <div style="font-size: 14px; color: #000000;">
             <ul style="list-style: none; padding: 0;">
                 <li><strong>Small:</strong> 75% of normal size</li>
                 <li><strong>Medium:</strong> Regular size</li>
@@ -49,7 +49,7 @@
             <option value="2">Almond</option>
             <option value="3">Oat</option>
         </select>
-        <div style="font-size: 14px; color: #555;">
+        <div style="font-size: 14px; color: #000000;">
             <ul style="list-style: none; padding: 0;">
                 <li><strong>Regular:</strong> Classic dairy milk</li>
                 <li><strong>Almond:</strong> Nutty and slightly sweet</li>
@@ -66,6 +66,21 @@
         <div class="status" id="statusMessage"></div>
         <h3>📊 Coffee Machine Status:</h3>
         <div class="status" id="machineStatus"></div>
+
+        <div class="status-bars">
+            <div class="resource">
+                <label>Water</label>
+                <div class="bar-container"><div class="bar" id="barWater"></div></div>
+            </div>
+            <div class="resource">
+                <label>Milk</label>
+                <div class="bar-container"><div class="bar" id="barMilk"></div></div>
+            </div>
+            <div class="resource">
+                <label>Coffee Beans</label>
+                <div class="bar-container"><div class="bar" id="barBeans"></div></div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
