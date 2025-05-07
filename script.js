@@ -16,7 +16,6 @@ const coffeeTypes = {
 };
 
 const cupSizes = { small: 0.75, medium: 1, large: 1.5 };
-const milkTypes = { 1: "Regular", 2: "Almond", 3: "Oat" };
 
 function updateMachineStatus() {
     document.getElementById("machineStatus").innerHTML = `
@@ -32,11 +31,9 @@ function updateMachineStatus() {
 function buyCoffee() {
     let coffeeChoice = document.getElementById("coffeeType").value;
     let sizeChoice = document.getElementById("cupSize").value;
-    let milkChoice = document.getElementById("milkType").value;
 
     let coffee = coffeeTypes[coffeeChoice];
     let multiplier = cupSizes[sizeChoice];
-    let milkType = milkTypes[milkChoice];
 
     let requiredWater = coffee.water * multiplier;
     let requiredMilk = coffee.milk * multiplier;
@@ -59,7 +56,7 @@ function buyCoffee() {
         coffeeMachine.money += finalCost;
         coffeeMachine.totalCupsSold += 1;
 
-        setStatusMessage(`✅ Here is your ${sizeChoice} ${coffee.name} with ${milkType} milk! ☕`);
+        setStatusMessage(`✅ Here is your ${sizeChoice} ${coffee.name} ☕`);
     }
 
     updateMachineStatus();
