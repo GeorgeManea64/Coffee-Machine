@@ -87,7 +87,7 @@ function setStatusMessage(message) {
     document.getElementById("statusMessage").innerHTML = message;
     setTimeout(() => {
         document.getElementById("statusMessage").innerHTML = "";
-    }, 3000);
+    }, 10000);
 }
 
 function updateMachineStatus() {
